@@ -1,8 +1,9 @@
 package Model;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Cinema {
+public class Cinema implements Serializable {
     private String name;
     private String location;
     private ArrayList<Hall> halls;
@@ -18,7 +19,6 @@ public class Cinema {
 
     }
 
-
     public String getName() {
         return name;
     }
@@ -31,7 +31,7 @@ public class Cinema {
 
         for (int i = 0; i < halls; i++){
             String hallId = "A" + i;
-           this.halls.add(new Hall(hallId,noSeatsPerHall ));
+           this.halls.add(new Hall(hallId,noSeatsPerHall));
         }
     }
 

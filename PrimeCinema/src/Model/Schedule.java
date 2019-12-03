@@ -1,9 +1,10 @@
 package Model;
 
+import java.io.Serializable;
 import java.sql.Date;
 import java.util.ArrayList;
 
-public class Schedule {
+public class Schedule implements Serializable {
 
     private ArrayList<Movie> movies;
 
